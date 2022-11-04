@@ -1,0 +1,69 @@
+* { padding: 0;
+    margin: 0;}
+
+h1 {
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px  black;
+
+}
+h2 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 32px;
+
+}
+h3 {
+    color: black;
+    margin-top: 10px;
+
+}
+body{
+    background-color: rgba(120, 118, 239, 0.844);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+main {
+    border: 2px solid black;
+    margin: auto;
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5%;
+    color: black;
+    text-align: left;
+    font-size: 23px;
+    padding-top: 50px;
+    line-height: 45px;
+}
+
+footer {
+    font-size: 20px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.525);
+}
+
+#verificador_bot {
+    font-size: 19px;
+}
+
+#mensagem {
+    color: red;
+    text-align: center;
+}
+
+#imagg {
+    width: 300px;
+    /* height: 300px; */
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+#ano_nasc {
+    font-size: 17px;
+}

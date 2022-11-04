@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>que horas são?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+    <h1>hora do dia</h1>
+    <main> 
+        <h2 id="hora">agora são</h2>
+        <div> <img src="fotos/relogio.png" alt="" id="img"></div>
+        <h3 id="comprimento">bom dia</h3>
+        
+    </main>
+        <footer>
+            <h2>desenvolvido por Alberexx technologies Ltda.</h2>
+        </footer>
+    <script>
+        function carregar() {
+        data =  new Date()
+        hora = data.getHours()
+        seletor = document.querySelector("#hora")
+        seletor2 = document.querySelector("#comprimento")
+        seletor3 = document.querySelector("#img")
+        
+        if (hora >= 0 && hora < 12) {
+            seletor.innerHTML = `São ${hora} horas`
+            seletor2.innerHTML = "Bom dia"
+            seletor3.src = 'https://thumbs.dreamstime.com/b/dia-ensolarado-1868032.jpg'
+        } else if (hora >= 12 && hora < 18) {
+            seletor.innerHTML = `São ${hora} horas`
+            seletor2.innerHTML = "Boa tarde"
+            seletor3.src = 'http://lanofrai.com.br/wp-content/uploads/2014/09/Final-de-tarde.png'
+        } else {
+            seletor.innerHTML = `São ${hora} horas`
+            seletor2.innerHTML = "Boa noite"
+            seletor3.src = 'https://img.freepik.com/vetores-premium/noite-linda-paisagem-do-ceu-na-floresta-com-lua-e-estrelas_104785-296.jpg'
+        }    
+    }
+    
+
+    </script>
+</body>
+</html>
